@@ -1,0 +1,9 @@
+{
+	"name" : "employeedetails-app",
+	"addons": ["logentries"],
+	"buildpacks":[
+		{
+			"url": "heroku/maven"
+		}
+	]
+}

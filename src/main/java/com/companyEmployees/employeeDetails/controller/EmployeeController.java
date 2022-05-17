@@ -50,5 +50,10 @@ public class EmployeeController {
 	public ResponseEntity<?> removeAllEmp(){
 		return new ResponseEntity<String>(empService.removeAllEmp(),HttpStatus.ACCEPTED);
 	}
+	
+	@GetMapping("/test")
+	public String testEmployeeController() {
+		return "Employee Controller is working";
+	}
 
 }
