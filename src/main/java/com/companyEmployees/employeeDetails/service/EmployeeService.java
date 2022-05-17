@@ -27,6 +27,7 @@ public class EmployeeService {
 		return employeeRepository.findById(empId).orElseThrow(()->new ResourceNotFoundException("Resource not found"));
 	}
 
+	
 	public String removeEmp(int empId) throws ResourceNotFoundException {
 		// TODO Auto-generated method stub
 		employeeRepository.deleteById(empId);
